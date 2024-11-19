@@ -1,5 +1,94 @@
 /* src/css/styles.css */
 
+/* ================ GLOBAL ================ */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body,
+h1,
+h2,
+p,
+figure,
+.menu {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Noto Sans", Verdana, Arial, sans-serif;
+
+  background-color: white;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================ HEADER ================ */
+
+header {
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+nav h2 a {
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  display: inline-block;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: gray;
+}
+
+.menu {
+  list-style: none;
+  display: none;
+}
+
+.menu a {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.menu.aberto {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 /* phone-call 1 */
 .phone-call {
   width: 14px;
