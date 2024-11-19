@@ -1,0 +1,10 @@
+/* phone-call 1 */
+.phone-call {
+  width: 14px;
+  height: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
